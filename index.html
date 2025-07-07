@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WF Barbearia</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #000;
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      position: relative;
+      flex: 1;
+      overflow: hidden;
+      max-width: 100%;
+    }
+
+    .imagem-capa {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .botoes {
+      position: absolute;
+      bottom: 25px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 0 20px;
+    }
+
+    .botao {
+      background-color: transparent;
+      color: #000;
+      padding: 14px 20px;
+      width: 100%;
+      max-width: 300px;
+      border: 2px;
+      border-radius: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .botao:hover {
+      background-color: #ffd400;
+    }
+
+    .localizacao {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      color: #fff;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .localizacao:hover {
+      color: #ffd400;
+    }
+
+    .localizacao img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .click-img {
+      position: absolute;
+      width: 80px;
+      height: auto;
+      top: 50%;
+      left: 69%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+      pointer-events: none;
+    }
+
+    .botao-container {
+      position: relative;
+      width: 100%;
+      max-width: 300px;
+      transform: translate(46px, -15px);
+    }
+
+    .whatsapp {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background-color: transparent;
+      color: #ffd400;
+      padding: 12px 20px;
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      transform: translate(-65px, -300px) rotate(-6deg);
+    }
+
+    .whatsapp:hover {
+      background-color: transparent;
+    }
+
+    .whatsapp img {
+      color: #ffd400;
+      width: 20px;
+      height: 20px;
+    }
+
+    .instagram {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background-color: transparent;
+      color: #ffd400;
+      padding: 12px 20px;
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      transform: translate(-70px, -270px) rotate(-6deg);
+    }
+
+    .instagram:hover {
+      background-color: transparent;
+    }
+
+    .instagram img {
+      color: #ffd400;
+      width: 20px;
+      height: 20px;
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        max-width: 414px;
+        margin: 0 auto;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img 
+        src="iniciowf.png" 
+        alt="Capa da Barbearia" 
+        class="imagem-capa"
+    >
+
+    <div class="botoes">
+      <a href="https://www.instagram.com/wanderlei_barber29?igsh=ZTNmMDM0dXljY2pu" class="instagram" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram">
+        Instagram
+      </a>
+      <a href="https://api.whatsapp.com/send?phone=5561998099155&text=Olá" class="whatsapp" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp">
+        WhatsApp
+      </a>
+      <div class="botao-container">
+        <a href="agendamento.html" class="botao" role="button">Agendar Horário</a>
+        <img src="click.png" alt="Clique aqui" class="click-img">
+      </div>
+      <a class="localizacao" href="https://www.google.com/maps/place/Wf+Barbearia/@-15.8024733,-48.1005596,17z/data=!3m1!4b1!4m6!3m5!1s0x935bcd9ceac0dc45:0x453445d92aba13a1!8m2!3d-15.8024785!4d-48.0979847!16s%2Fg%2F11gtd3l7m9?entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/marker.png" alt="Ícone de Localização">
+        Ver no Google Maps
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
